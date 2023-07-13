@@ -42,6 +42,17 @@ optional = false
 python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,!=3.5.*,!=3.6.*,>=2.7"
 
 [[package]]
+name = "faker"
+version = "19.1.0"
+description = "Faker is a Python package that generates fake data for you."
+category = "main"
+optional = false
+python-versions = ">=3.8"
+
+[package.dependencies]
+python-dateutil = ">=2.4"
+
+[[package]]
 name = "google-api-core"
 version = "2.11.1"
 description = "Google API client core library"
@@ -426,7 +437,7 @@ python-versions = ">=3.7"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "3878ca6b9bc51c0df960699181784ad31f27ad4e365e7ebdb83408db2ca856ba"
+content-hash = "6868c6f94c61a842722781e0b862ba8846f21eda92a3f9c420057a1f94f057da"
 
 [metadata.files]
 cachetools = []
@@ -434,6 +445,7 @@ certifi = []
 charset-normalizer = []
 click = []
 colorama = []
+faker = []
 google-api-core = []
 google-auth = []
 google-cloud-aiplatform = []
