@@ -1,1 +1,1 @@
-poetry run python main.py sample.txt | tee embedding.json
+poetry run python main.py sample.txt

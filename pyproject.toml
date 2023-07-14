@@ -8,7 +8,7 @@ authors = ["shin5ok <shin5ok@55mp.com>"]
 python = "^3.10"
 vertexai = "^0.0.1"
 click = "^8.1.4"
-google-cloud-aiplatform = "^1.28.0"
+google-cloud-aiplatform = {git = "https://github.com/googleapis/python-aiplatform.git", rev = "main"}
 Faker = "^19.1.0"
 
 [tool.poetry.dev-dependencies]
