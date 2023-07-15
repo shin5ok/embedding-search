@@ -4,9 +4,11 @@ from vertexai.language_models import TextEmbeddingModel
 import os
 import click
 
+# 1611865798.us-central1-408118702395.vdb.vertexai.goog
 endpoint = os.environ.get("ENDPOINT")
+# projects/408118702395/locations/us-central1/indexEndpoints/4425129681519378432
 endpoint_name = os.environ.get("ENDPOINT_NAME")
-index_id = os.environ.get("INDEX_ID", "testindex")
+index_id = os.environ.get("INDEX_ID")
 
 def get_vector_array(message: str) -> list:
     model = TextEmbeddingModel.from_pretrained("textembedding-gecko@001")
